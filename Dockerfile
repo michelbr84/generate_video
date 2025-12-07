@@ -15,7 +15,7 @@ RUN cd /ComfyUI/custom_nodes && \
     git clone https://github.com/Comfy-Org/ComfyUI-Manager.git && \
     cd ComfyUI-Manager && \
     pip install -r requirements.txt
-    
+
 RUN cd /ComfyUI/custom_nodes && \
     git clone https://github.com/city96/ComfyUI-GGUF && \
     cd ComfyUI-GGUF && \
@@ -30,12 +30,12 @@ RUN cd /ComfyUI/custom_nodes && \
     git clone https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite && \
     cd ComfyUI-VideoHelperSuite && \
     pip install -r requirements.txt
-    
+
 RUN cd /ComfyUI/custom_nodes && \
     git clone https://github.com/kael558/ComfyUI-GGUF-FantasyTalking && \
     cd ComfyUI-GGUF-FantasyTalking && \
     pip install -r requirements.txt
-    
+
 RUN cd /ComfyUI/custom_nodes && \
     git clone https://github.com/orssorbit/ComfyUI-wanBlockswap
 
@@ -44,7 +44,7 @@ RUN cd /ComfyUI/custom_nodes && \
     cd ComfyUI-WanVideoWrapper && \
     pip install -r requirements.txt
 
-    
+
 RUN cd /ComfyUI/custom_nodes && \
     git clone https://github.com/eddyhhlure1Eddy/IntelligentVRAMNode && \
     git clone https://github.com/eddyhhlure1Eddy/auto_wan2.2animate_freamtowindow_server && \

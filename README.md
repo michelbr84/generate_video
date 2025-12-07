@@ -1,6 +1,6 @@
 # Wan2.2 • API Serverless para Geração de Vídeo (RunPod)
 
-Este projeto implementa um servidor **Serverless** no RunPod para geração de vídeo a partir de uma imagem usando o modelo **Wan2.2**.  
+Este projeto implementa um servidor **Serverless** no RunPod para geração de vídeo a partir de uma imagem usando o modelo **Wan2.2**.
 O processamento é feito por meio de um workflow do **ComfyUI**, executando na GPU sob demanda.
 
 O endpoint suporta:
@@ -14,8 +14,8 @@ O endpoint suporta:
 
 ## 🚀 Como funciona
 
-1️⃣ O n8n (ou qualquer cliente HTTP) envia uma requisição `POST /run` com JSON de entrada  
-2️⃣ O Serverless Worker executa o workflow Wan2.2 no ComfyUI  
+1️⃣ O n8n (ou qualquer cliente HTTP) envia uma requisição `POST /run` com JSON de entrada
+2️⃣ O Serverless Worker executa o workflow Wan2.2 no ComfyUI
 3️⃣ O worker retorna o vídeo gerado em base64
 
 ---
@@ -48,3 +48,6 @@ O endpoint suporta:
     "seed": 42
   }
 }
+```
+
+O retorno padrão do worker é um JSON contendo `video_base64` com o vídeo gerado codificado em Base64.
