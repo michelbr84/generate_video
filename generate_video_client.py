@@ -178,7 +178,7 @@ class GenerateVideoClient:
                 return False
             
             output = result.get('output', {})
-            video_b64 = output.get('video')
+            video_b64 = output.get('video_base64')
             
             if not video_b64:
                 logger.error("Video data not found")
